@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & Community - RIIB Modest Wear</title>
+    <meta name="description" content="Connect with RIIB through WhatsApp, join our community of modest fashion enthusiasts, and share your style story. Where faith meets fashion.">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <script type="module" async src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Friibmodes8593back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.12"></script>
+  <script type="module" defer src="https://static.rocket.new/rocket-shot.js?v=0.0.2"></script>
+  </head>
+<body class="bg-background text-text-primary">
+    <!-- Navigation Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-surface-200">
+        <nav class="container mx-auto container-padding py-4">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <svg class="w-10 h-10 text-primary mr-3" viewBox="0 0 40 40" fill="currentColor">
+                        <path d="M20 2L35 10v20L20 38L5 30V10L20 2z"/>
+                        <path d="M20 8L28 12v16L20 32L12 28V12L20 8z" fill="white"/>
+                        <text x="20" y="24" text-anchor="middle" class="text-xs font-bold fill-primary">R</text>
+                    </svg>
+                    <div>
+                        <h1 class="font-headline text-xl font-bold text-primary">RIIB</h1>
+                        <p class="text-xs text-text-secondary font-accent">Modest Wear</p>
+                    </div>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="homepage.html" class="text-text-secondary hover:text-primary transition-colors">Home</a>
+                    <a href="collections.html" class="text-text-secondary hover:text-primary transition-colors">Collections</a>
+                    <a href="about_riib.html" class="text-text-secondary hover:text-primary transition-colors">About RIIB</a>
+                    <a href="styling_guide.html" class="text-text-secondary hover:text-primary transition-colors">Styling Guide</a>
+                    <a href="size_and_fit_guide.html" class="text-text-secondary hover:text-primary transition-colors">Size & Fit</a>
+                    <a href="contact_and_community.html" class="text-primary font-medium">Community</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden p-2" id="mobile-menu-btn" aria-label="Toggle mobile menu">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div class="md:hidden hidden mt-4 pb-4 border-t border-surface-200" id="mobile-menu">
+                <div class="flex flex-col space-y-3 pt-4">
+                    <a href="homepage.html" class="text-text-secondary">Home</a>
+                    <a href="collections.html" class="text-text-secondary">Collections</a>
+                    <a href="about_riib.html" class="text-text-secondary">About RIIB</a>
+                    <a href="styling_guide.html" class="text-text-secondary">Styling Guide</a>
+                    <a href="size_and_fit_guide.html" class="text-text-secondary">Size & Fit</a>
+                    <a href="contact_and_community.html" class="text-primary font-medium">Community</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-16 md:pt-40 md:pb-24 overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="https://img.rocket.new/generatedImages/rocket_gen_img_1a174eb3c-1766423485370.png" 
+                 alt="Diverse group of Muslim women in elegant modest fashion sharing stories and connecting in a warm, welcoming community space" 
+                 class="w-full h-full object-cover"
+                 onerror="this.src='https://images.unsplash.com/photo-1529156069898-49953e39b3ac?q=80&w=2940&h=1200&auto=format&fit=crop'; this.onerror=null;">
+            <div class="absolute inset-0 bg-gradient-to-b from-background/90 via-background/70 to-background"></div>
+        </div>
+
+        <div class="relative z-10 container mx-auto container-padding text-center">
+            <h1 class="heading-display text-text-primary mb-6 fade-in">
+                Join Our <span class="text-primary">Community</span>
+            </h1>
+            <p class="body-large text-text-secondary mb-8 max-w-3xl mx-auto fade-in stagger-delay-1">
+                Connect with fellow modest fashion enthusiasts, share your style journey, and be part of a community that celebrates dignity, style, and decency. Your story matters here.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center fade-in stagger-delay-2">
+                <a href="https://wa.me/2348123456789?text=Hello%20RIIB!%20I'd%20like%20to%20connect%20with%20your%20community" 
+                   class="btn-whatsapp" target="_blank">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.106"/>
+                    </svg>
+                    Chat with Us
+                </a>
+                <a href="#share-story" class="btn-secondary">Share Your Story</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp Commerce Hub -->
+    <section class="section-padding bg-surface">
+        <div class="container mx-auto container-padding">
+            <div class="text-center mb-16">
+                <h2 class="heading-2 text-text-primary mb-4">How Can We Help You Today?</h2>
+                <p class="body-large text-text-secondary max-w-2xl mx-auto">
+                    Choose your inquiry type below for personalized assistance through WhatsApp. We're here to make your modest fashion journey seamless and enjoyable.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Product Inquiry -->
+                <div class="card-elevated group hover:shadow-hover transition-all duration-300">
+                    <div class="flex items-start gap-4 mb-4">
+                        <div class="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center flex-shrink-0">
+                            <svg class="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M16 6v2h5.586l-7.586 7.586-4-4L2.707 19.879l1.414 1.414L10 15.414l4 4 9-9V16h2V4h-12v2h3z"/>
+                            </svg>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="heading-5 text-text-primary mb-2">Product Questions</h3>
+                            <p class="body-regular text-text-secondary mb-4">
+                                Ask about specific pieces, availability, fabrics, or customization options.
+                            </p>
+                            <a href="https://wa.me/2348123456789?text=Hello%20RIIB!%20I%20have%20questions%20about%20your%20products" 
+                               class="text-primary font-medium hover:text-primary-600 transition-colors inline-flex items-center gap-2" target="_blank">
+                                Start Conversation
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Styling Advice -->
+                <div class="card-elevated group hover:shadow-hover transition-all duration-300">
+                    <div class="flex items-start gap-4 mb-4">
+                        <div class="w-12 h-12 bg-accent-100 rounded-full flex items-center justify-center flex-shrink-0">
+                            <svg class="w-6 h-6 text-accent" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="heading-5 text-text-primary mb-2">Styling Advice</h3>
+                            <p class="body-regular text-text-secondary mb-4">
+                                Get personalized styling tips and outfit recommendations for any occasion.
+                            </p>
+                            <a href="https://wa.me/2348123456789?text=Hello%20RIIB!%20I%20need%20styling%20advice%20for%20my%20wardrobe" 
+                               class="text-primary font-medium hover:text-primary-600 transition-colors inline-flex items-center gap-2" target="_blank">
+                                Get Style Help
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Order Support -->
+                <div class="card-elevated group hover:shadow-hover transition-all duration-300">
+                    <div class="flex items-start gap-4 mb-4">
+                        <div class="w-12 h-12 bg-success-100 rounded-full flex items-center justify-center flex-shrink-0">
+                            <svg class="w-6 h-6 text-success" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="heading-5 text-text-primary mb-2">Order Support</h3>
+                            <p class="body-regular text-text-secondary mb-4">
+                                Track your order, request changes, or get help with shipping and delivery.
+                            </p>
+                            <a href="https://wa.me/2348123456789?text=Hello%20RIIB!%20I%20need%20help%20with%20my%20order" 
+                               class="text-primary font-medium hover:text-primary-600 transition-colors inline-flex items-center gap-2" target="_blank">
+                                Order Assistance
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Size & Fit Help -->
+                <div class="card-elevated group hover:shadow-hover transition-all duration-300">
+                    <div class="flex items-start gap-4 mb-4">
+                        <div class="w-12 h-12 bg-secondary-100 rounded-full flex items-center justify-center flex-shrink-0">
+                            <svg class="w-6 h-6 text-secondary" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                            </svg>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="heading-5 text-text-primary mb-2">Size & Fit Help</h3>
+                            <p class="body-regular text-text-secondary mb-4">
+                                Get personalized size recommendations and fitting guidance for modest wear.
+                            </p>
+                            <a href="https://wa.me/2348123456789?text=Hello%20RIIB!%20I%20need%20help%20with%20sizing%20and%20fit" 
+                               class="text-primary font-medium hover:text-primary-600 transition-colors inline-flex items-center gap-2" target="_blank">
+                                Size Guidance
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Custom Orders -->
+                <div class="card-elevated group hover:shadow-hover transition-all duration-300">
+                    <div class="flex items-start gap-4 mb-4">
+                        <div class="w-12 h-12 bg-warning-100 rounded-full flex items-center justify-center flex-shrink-0">
+                            <svg class="w-6 h-6 text-warning" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"/>
+                            </svg>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="heading-5 text-text-primary mb-2">Custom Orders</h3>
+                            <p class="body-regular text-text-secondary mb-4">
+                                Discuss bespoke designs, special requests, or bulk orders for events.
+                            </p>
+                            <a href="https://wa.me/2348123456789?text=Hello%20RIIB!%20I'm%20interested%20in%20custom%20orders" 
+                               class="text-primary font-medium hover:text-primary-600 transition-colors inline-flex items-center gap-2" target="_blank">
+                                Custom Inquiry
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- General Inquiry -->
+                <div class="card-elevated group hover:shadow-hover transition-all duration-300">
+                    <div class="flex items-start gap-4 mb-4">
+                        <div class="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center flex-shrink-0">
+                            <svg class="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
+                            </svg>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="heading-5 text-text-primary mb-2">General Inquiry</h3>
+                            <p class="body-regular text-text-secondary mb-4">
+                                Have other questions? We're here to help with anything you need.
+                            </p>
+                            <a href="https://wa.me/2348123456789?text=Hello%20RIIB!%20I%20have%20a%20question" 
+                               class="text-primary font-medium hover:text-primary-600 transition-colors inline-flex items-center gap-2" target="_blank">
+                                Ask Anything
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Customer Service Hours -->
+            <div class="mt-12 text-center card-elevated max-w-2xl mx-auto">
+                <div class="flex items-center justify-center gap-3 mb-4">
+                    <svg class="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/>
+                    </svg>
+                    <h3 class="heading-5 text-text-primary">Customer Service Hours</h3>
+                </div>
+                <p class="body-regular text-text-secondary mb-2">
+                    <strong>Monday - Friday:</strong> 9:00 AM - 6:00 PM (WAT)
+                </p>
+                <p class="body-regular text-text-secondary mb-2">
+                    <strong>Saturday:</strong> 10:00 AM - 4:00 PM (WAT)
+                </p>
+                <p class="body-regular text-text-secondary">
+                    <strong>Sunday:</strong> Closed
+                </p>
+                <p class="body-small text-text-tertiary mt-4">
+                    We typically respond within 2 hours during business hours. For urgent inquiries, please call us directly.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Stories -->
+    <section class="section-padding">
+        <div class="container mx-auto container-padding">
+            <div class="text-center mb-16">
+                <h2 class="heading-2 text-text-primary mb-4">Community Stories</h2>
+                <p class="body-large text-text-secondary max-w-2xl mx-auto">
+                    Real women sharing how RIIB pieces have become part of their modest fashion journey, celebrating both style and values.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Story 1 -->
+                <div class="card-elevated">
+                    <div class="relative overflow-hidden aspect-square mb-4 rounded-lg">
+                        <img src="https://images.unsplash.com/photo-1693500582138-81e024694a67" 
+                             alt="Amina Hassan wearing elegant emerald green RIIB abaya with gold embroidery at a family wedding celebration" 
+                             class="w-full h-full object-cover"
+                             onerror="this.src='https://images.pexels.com/photos/1926769/pexels-photo-1926769.jpeg?auto=compress&cs=tinysrgb&w=800&h=800&dpr=2'; this.onerror=null;">
+                    </div>
+                    <div class="flex items-center mb-3">
+                        <img src="https://images.unsplash.com/photo-1644689196187-ec217bfa0d70" 
+                             alt="Portrait of Amina Hassan smiling warmly in traditional hijab" 
+                             class="w-10 h-10 rounded-full object-cover mr-3"
+                             onerror="this.src='https://img.rocket.new/generatedImages/rocket_gen_img_16c2cfc34-1763295605817.png'; this.onerror=null;">
+                        <div>
+                            <h4 class="font-medium text-text-primary">Amina Hassan</h4>
+                            <p class="text-sm text-text-secondary">Lagos, Nigeria</p>
+                        </div>
+                    </div>
+                    <p class="body-regular text-text-secondary mb-4">
+                        "I wore my RIIB emerald abaya to my cousin's wedding and received so many compliments! The quality is exceptional, and I felt both elegant and comfortable throughout the celebration. RIIB truly understands modest fashion."
+                    </p>
+                    <div class="flex items-center gap-2 text-sm text-text-tertiary">
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"></path>
+                        </svg>
+                        <span>December 2025</span>
+                    </div>
+                </div>
+
+                <!-- Story 2 -->
+                <div class="card-elevated">
+                    <div class="relative overflow-hidden aspect-square mb-4 rounded-lg">
+                        <img src="https://img.rocket.new/generatedImages/rocket_gen_img_1f3e943d9-1763293754332.png" 
+                             alt="Zainab Okonkwo in professional beige RIIB tunic and matching trousers at her office workspace" 
+                             class="w-full h-full object-cover"
+                             onerror="this.src='https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=800&h=800&auto=format&fit=crop'; this.onerror=null;">
+                    </div>
+                    <div class="flex items-center mb-3">
+                        <img src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&dpr=2" 
+                             alt="Portrait of Zainab Okonkwo in professional attire with confident smile" 
+                             class="w-10 h-10 rounded-full object-cover mr-3"
+                             onerror="this.src='https://images.unsplash.com/photo-1494790108755-2616b612b786?q=80&w=100&h=100&auto=format&fit=crop'; this.onerror=null;">
+                        <div>
+                            <h4 class="font-medium text-text-primary">Zainab Okonkwo</h4>
+                            <p class="text-sm text-text-secondary">Abuja, Nigeria</p>
+                        </div>
+                    </div>
+                    <p class="body-regular text-text-secondary mb-4">
+                        "As a professional working in corporate Nigeria, finding modest workwear that's both stylish and appropriate was challenging. RIIB's everyday collection has transformed my work wardrobe. I feel confident and true to my values."
+                    </p>
+                    <div class="flex items-center gap-2 text-sm text-text-tertiary">
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"></path>
+                        </svg>
+                        <span>November 2025</span>
+                    </div>
+                </div>
+
+                <!-- Story 3 -->
+                <div class="card-elevated">
+                    <div class="relative overflow-hidden aspect-square mb-4 rounded-lg">
+                        <img src="https://img.rocket.new/generatedImages/rocket_gen_img_1586bbb5b-1764663386298.png" 
+                             alt="Khadija Bello wearing festive golden RIIB kaftan during Eid celebration with family" 
+                             class="w-full h-full object-cover"
+                             onerror="this.src='https://images.pexels.com/photos/1926769/pexels-photo-1926769.jpeg?auto=compress&cs=tinysrgb&w=800&h=800&dpr=2'; this.onerror=null;">
+                    </div>
+                    <div class="flex items-center mb-3">
+                        <img src="https://img.rocket.new/generatedImages/rocket_gen_img_15a978ed2-1766533523668.png" 
+                             alt="Portrait of Khadija Bello in traditional Nigerian headwrap with joyful expression" 
+                             class="w-10 h-10 rounded-full object-cover mr-3"
+                             onerror="this.src='https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&dpr=2'; this.onerror=null;">
+                        <div>
+                            <h4 class="font-medium text-text-primary">Khadija Bello</h4>
+                            <p class="text-sm text-text-secondary">Kano, Nigeria</p>
+                        </div>
+                    </div>
+                    <p class="body-regular text-text-secondary mb-4">
+                        "My RIIB Eid collection piece made this year's celebration extra special. The craftsmanship is outstanding, and the design perfectly balances traditional Nigerian aesthetics with contemporary modest fashion. I'm a customer for life!"
+                    </p>
+                    <div class="flex items-center gap-2 text-sm text-text-tertiary">
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"></path>
+                        </svg>
+                        <span>October 2025</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Share Your Story Section -->
+    <section id="share-story" class="section-padding bg-surface">
+        <div class="container mx-auto container-padding">
+            <div class="max-w-3xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="heading-2 text-text-primary mb-4">Share Your RIIB Story</h2>
+                    <p class="body-large text-text-secondary">
+                        We'd love to hear how RIIB has become part of your modest fashion journey. Share your story and inspire other women in our community.
+                    </p>
+                </div>
+
+                <div class="card-elevated">
+                    <form id="story-form" class="space-y-6">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-text-primary mb-2">Your Name *</label>
+                                <input type="text" id="name" name="name" required
+                                       class="input-field" placeholder="Enter your full name">
+                            </div>
+                            <div>
+                                <label for="location" class="block text-sm font-medium text-text-primary mb-2">Location *</label>
+                                <input type="text" id="location" name="location" required
+                                       class="input-field" placeholder="City, Nigeria">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-text-primary mb-2">Email Address *</label>
+                            <input type="email" id="email" name="email" required
+                                   class="input-field" placeholder="your.email@example.com">
+                        </div>
+
+                        <div>
+                            <label for="story" class="block text-sm font-medium text-text-primary mb-2">Your Story *</label>
+                            <textarea id="story" name="story" rows="6" required
+                                      class="input-field resize-none" 
+                                      placeholder="Tell us about your experience with RIIB. How has our modest fashion become part of your lifestyle? What piece do you love most and why?"></textarea>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-medium text-text-primary mb-2">Share Your Photo (Optional)</label>
+                            <div class="border-2 border-dashed border-secondary rounded-lg p-8 text-center">
+                                <svg class="w-12 h-12 text-text-tertiary mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                                </svg>
+                                <p class="body-regular text-text-secondary mb-2">Upload a photo of you wearing your RIIB piece</p>
+                                <p class="body-small text-text-tertiary mb-4">JPG, PNG or HEIC (max. 5MB)</p>
+                                <button type="button" class="btn-secondary">Choose File</button>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-3">
+                            <input type="checkbox" id="consent" name="consent" required
+                                   class="mt-1 w-4 h-4 text-primary border-secondary rounded focus:ring-primary">
+                            <label for="consent" class="body-small text-text-secondary">
+                                I consent to RIIB using my story and photo on their website and social media platforms. I understand that my submission may be edited for clarity and length.
+                            </label>
+                        </div>
+
+                        <div class="flex flex-col sm:flex-row gap-4">
+                            <button type="submit" class="btn-primary flex-1">Submit Your Story</button>
+                            <a href="https://wa.me/2348123456789?text=Hello%20RIIB!%20I'd%20like%20to%20share%20my%20story%20via%20WhatsApp" 
+                               class="btn-whatsapp flex-1 justify-center" target="_blank">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.106"/>
+                                </svg>
+                                Share via WhatsApp
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brand Ambassadors -->
+    <section class="section-padding">
+        <div class="container mx-auto container-padding">
+            <div class="text-center mb-16">
+                <h2 class="heading-2 text-text-primary mb-4">RIIB Brand Ambassadors</h2>
+                <p class="body-large text-text-secondary max-w-2xl mx-auto">
+                    Meet the inspiring women who embody RIIB values and help us celebrate modest fashion as a lifestyle choice.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Ambassador 1 -->
+                <div class="card-elevated text-center">
+                    <div class="relative overflow-hidden aspect-square mb-4 rounded-lg">
+                        <img src="https://img.rocket.new/generatedImages/rocket_gen_img_17ebbe506-1765812066789.png" 
+                             alt="Hauwa Abdullahi, RIIB brand ambassador and modest fashion influencer, wearing elegant cream abaya with gold accents" 
+                             class="w-full h-full object-cover"
+                             onerror="this.src='https://images.pexels.com/photos/1926769/pexels-photo-1926769.jpeg?auto=compress&cs=tinysrgb&w=800&h=800&dpr=2'; this.onerror=null;">
+                    </div>
+                    <h3 class="heading-5 text-text-primary mb-2">Hauwa Abdullahi</h3>
+                    <p class="body-small text-text-secondary mb-4">Modest Fashion Blogger</p>
+                    <p class="body-regular text-text-secondary mb-4">
+                        "RIIB represents everything I believe in—faith, fashion, and Nigerian pride. Their pieces make me feel empowered and beautiful."
+                    </p>
+                    <div class="flex justify-center gap-3">
+                        <a href="javascript:void(0)" class="text-primary hover:text-primary-600 transition-colors" aria-label="Instagram profile">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="text-primary hover:text-primary-600 transition-colors" aria-label="Twitter profile">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Ambassador 2 -->
+                <div class="card-elevated text-center">
+                    <div class="relative overflow-hidden aspect-square mb-4 rounded-lg">
+                        <img src="https://img.rocket.new/generatedImages/rocket_gen_img_153e97c82-1763293683213.png" 
+                             alt="Maryam Yusuf, RIIB brand ambassador and lifestyle content creator, in professional modest business attire" 
+                             class="w-full h-full object-cover"
+                             onerror="this.src='https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=800&h=800&auto=format&fit=crop'; this.onerror=null;">
+                    </div>
+                    <h3 class="heading-5 text-text-primary mb-2">Maryam Yusuf</h3>
+                    <p class="body-small text-text-secondary mb-4">Lifestyle Content Creator</p>
+                    <p class="body-regular text-text-secondary mb-4">
+                        "RIIB has transformed how I approach modest fashion. Every piece tells a story of Nigerian craftsmanship and contemporary elegance."
+                    </p>
+                    <div class="flex justify-center gap-3">
+                        <a href="javascript:void(0)" class="text-primary hover:text-primary-600 transition-colors" aria-label="Instagram profile">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="text-primary hover:text-primary-600 transition-colors" aria-label="YouTube channel">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Ambassador 3 -->
+                <div class="card-elevated text-center">
+                    <div class="relative overflow-hidden aspect-square mb-4 rounded-lg">
+                        <img src="https://img.rocket.new/generatedImages/rocket_gen_img_15481f3ed-1766533523974.png" 
+                             alt="Safiya Ibrahim, RIIB brand ambassador and Islamic lifestyle advocate, wearing traditional Nigerian modest fashion" 
+                             class="w-full h-full object-cover"
+                             onerror="this.src='https://images.pexels.com/photos/3394310/pexels-photo-3394310.jpeg?auto=compress&cs=tinysrgb&w=800&h=800&dpr=2'; this.onerror=null;">
+                    </div>
+                    <h3 class="heading-5 text-text-primary mb-2">Safiya Ibrahim</h3>
+                    <p class="body-small text-text-secondary mb-4">Islamic Lifestyle Advocate</p>
+                    <p class="body-regular text-text-secondary mb-4">
+                        "RIIB understands that modesty is not a limitation but a celebration of our values. Their designs honor both tradition and modernity."
+                    </p>
+                    <div class="flex justify-center gap-3">
+                        <a href="javascript:void(0)" class="text-primary hover:text-primary-600 transition-colors" aria-label="Instagram profile">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="text-primary hover:text-primary-600 transition-colors" aria-label="Facebook page">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <p class="body-large text-text-secondary mb-6">
+                    Interested in becoming a RIIB Brand Ambassador?
+                </p>
+                <a href="https://wa.me/2348123456789?text=Hello%20RIIB!%20I'm%20interested%20in%20your%20Brand%20Ambassador%20program" 
+                   class="btn-primary" target="_blank">Apply Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Media Integration -->
+    <section class="section-padding bg-primary text-white">
+        <div class="container mx-auto container-padding">
+            <div class="text-center mb-12">
+                <h2 class="heading-2 mb-4">Follow Our Community</h2>
+                <p class="body-large opacity-90 max-w-2xl mx-auto">
+                    Join thousands of modest fashion enthusiasts sharing their RIIB style on social media. Tag us @riibmodestwear to be featured!
+                </p>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
+                <!-- Instagram Gallery -->
+                <div class="relative overflow-hidden aspect-square rounded-lg group cursor-pointer">
+                    <img src="https://img.rocket.new/generatedImages/rocket_gen_img_10395af8b-1766533523710.png" 
+                         alt="Customer styling photo featuring RIIB emerald abaya with gold accessories shared on Instagram" 
+                         class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                         onerror="this.src='https://images.pexels.com/photos/1926769/pexels-photo-1926769.jpeg?auto=compress&cs=tinysrgb&w=600&h=600&dpr=2'; this.onerror=null;">
+                    <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <svg class="w-8 h-8" fill="white" viewBox="0 0 24 24">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="relative overflow-hidden aspect-square rounded-lg group cursor-pointer">
+                    <img src="https://img.rocket.new/generatedImages/rocket_gen_img_1c7d76a15-1766533527097.png" 
+                         alt="Professional modest fashion styling featuring RIIB beige tunic ensemble shared by community member" 
+                         class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                         onerror="this.src='https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=600&h=600&auto=format&fit=crop'; this.onerror=null;">
+                    <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <svg class="w-8 h-8" fill="white" viewBox="0 0 24 24">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="relative overflow-hidden aspect-square rounded-lg group cursor-pointer">
+                    <img src="https://img.rocket.new/generatedImages/rocket_gen_img_1586bbb5b-1764663386298.png" 
+                         alt="Festive Eid celebration styling with RIIB golden kaftan shared by happy customer on social media" 
+                         class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                         onerror="this.src='https://images.pexels.com/photos/1926769/pexels-photo-1926769.jpeg?auto=compress&cs=tinysrgb&w=600&h=600&dpr=2'; this.onerror=null;">
+                    <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <svg class="w-8 h-8" fill="white" viewBox="0 0 24 24">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="relative overflow-hidden aspect-square rounded-lg group cursor-pointer">
+                    <img src="https://img.rocket.new/generatedImages/rocket_gen_img_13446f117-1766533528287.png" 
+                         alt="Everyday elegance styling inspiration featuring RIIB neutral collection shared by brand ambassador" 
+                         class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                         onerror="this.src='https://images.pexels.com/photos/3394310/pexels-photo-3394310.jpeg?auto=compress&cs=tinysrgb&w=600&h=600&dpr=2'; this.onerror=null;">
+                    <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <svg class="w-8 h-8" fill="white" viewBox="0 0 24 24">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-wrap justify-center gap-6">
+                <a href="javascript:void(0)" class="flex items-center gap-3 text-white hover:text-accent transition-colors" aria-label="Follow us on Instagram">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                    </svg>
+                    <span class="font-medium">@riibmodestwear</span>
+                </a>
+
+                <a href="javascript:void(0)" class="flex items-center gap-3 text-white hover:text-accent transition-colors" aria-label="Follow us on Facebook">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                    </svg>
+                    <span class="font-medium">RIIB Modest Wear</span>
+                </a>
+
+                <a href="javascript:void(0)" class="flex items-center gap-3 text-white hover:text-accent transition-colors" aria-label="Follow us on Twitter">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                    </svg>
+                    <span class="font-medium">@RIIBModest</span>
+                </a>
+
+                <a href="javascript:void(0)" class="flex items-center gap-3 text-white hover:text-accent transition-colors" aria-label="Subscribe to our YouTube channel">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                    </svg>
+                    <span class="font-medium">RIIB Modest Wear</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Contact Methods -->
+    <section class="section-padding">
+        <div class="container mx-auto container-padding">
+            <div class="text-center mb-16">
+                <h2 class="heading-2 text-text-primary mb-4">Other Ways to Connect</h2>
+                <p class="body-large text-text-secondary max-w-2xl mx-auto">
+                    While WhatsApp is our preferred communication channel, we're available through multiple platforms to serve you better.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+                <!-- Email -->
+                <div class="card-elevated text-center">
+                    <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
+                            <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="heading-5 text-text-primary mb-2">Email Us</h3>
+                    <p class="body-regular text-text-secondary mb-4">
+                        For detailed inquiries and business matters
+                    </p>
+                    <a href="mailto:hello@riibmodest.com" class="text-primary font-medium hover:text-primary-600 transition-colors">
+                        hello@riibmodest.com
+                    </a>
+                </div>
+
+                <!-- Phone -->
+                <div class="card-elevated text-center">
+                    <div class="w-16 h-16 bg-accent-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-accent" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
+                            <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="heading-5 text-text-primary mb-2">Call Us</h3>
+                    <p class="body-regular text-text-secondary mb-4">
+                        Speak directly with our team
+                    </p>
+                    <a href="tel:+2348123456789" class="text-primary font-medium hover:text-primary-600 transition-colors">
+                        +234 812 345 6789
+                    </a>
+                </div>
+
+                <!-- Visit -->
+                <div class="card-elevated text-center">
+                    <div class="w-16 h-16 bg-secondary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-secondary" fill="currentColor" viewBox="0 0 24 24">
+                            <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                    <h3 class="heading-5 text-text-primary mb-2">Visit Our Studio</h3>
+                    <p class="body-regular text-text-secondary mb-4">
+                        By appointment only
+                    </p>
+                    <p class="text-primary font-medium">
+                        Ibadan, Nigeria
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-text-primary text-white section-padding">
+        <div class="container mx-auto container-padding">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                <!-- Brand -->
+                <div>
+                    <div class="flex items-center mb-6">
+                        <svg class="w-8 h-8 text-primary mr-2" viewBox="0 0 40 40" fill="currentColor">
+                            <path d="M20 2L35 10v20L20 38L5 30V10L20 2z"/>
+                            <path d="M20 8L28 12v16L20 32L12 28V12L20 8z" fill="white"/>
+                            <text x="20" y="24" text-anchor="middle" class="text-xs font-bold fill-primary">R</text>
+                        </svg>
+                        <div>
+                            <h3 class="font-headline text-lg font-bold text-primary">RIIB</h3>
+                            <p class="text-xs text-gray-300 font-accent">Modest Wear</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 mb-4">
+                        Celebrating the intersection of faith, fashion, and Nigerian craftsmanship. Dignity, Style & Decency.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="javascript:void(0)" class="text-gray-300 hover:text-primary transition-colors" aria-label="Twitter">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="text-gray-300 hover:text-primary transition-colors" aria-label="Facebook">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="text-gray-300 hover:text-primary transition-colors" aria-label="Pinterest">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.174-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.402.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.357-.629-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24.009 12.017 24.009c6.624 0 11.99-5.367 11.99-11.988C24.007 5.367 18.641.001.012.001z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="text-gray-300 hover:text-primary transition-colors" aria-label="Instagram">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="font-headline text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="collections.html" class="text-gray-300 hover:text-primary transition-colors">Collections</a></li>
+                        <li><a href="about_riib.html" class="text-gray-300 hover:text-primary transition-colors">About RIIB</a></li>
+                        <li><a href="styling_guide.html" class="text-gray-300 hover:text-primary transition-colors">Styling Guide</a></li>
+                        <li><a href="size_and_fit_guide.html" class="text-gray-300 hover:text-primary transition-colors">Size & Fit Guide</a></li>
+                        <li><a href="contact_and_community.html" class="text-gray-300 hover:text-primary transition-colors">Community</a></li>
+                    </ul>
+                </div>
+
+                <!-- Customer Care -->
+                <div>
+                    <h4 class="font-headline text-lg font-semibold mb-4">Customer Care</h4>
+                    <ul class="space-y-2">
+                        <li><a href="javascript:void(0)" class="text-gray-300 hover:text-primary transition-colors">Shipping Info</a></li>
+                        <li><a href="javascript:void(0)" class="text-gray-300 hover:text-primary transition-colors">Returns & Exchanges</a></li>
+                        <li><a href="javascript:void(0)" class="text-gray-300 hover:text-primary transition-colors">Care Instructions</a></li>
+                        <li><a href="javascript:void(0)" class="text-gray-300 hover:text-primary transition-colors">Privacy Policy</a></li>
+                        <li><a href="javascript:void(0)" class="text-gray-300 hover:text-primary transition-colors">Terms of Service</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h4 class="font-headline text-lg font-semibold mb-4">Get in Touch</h4>
+                    <div class="space-y-3">
+                        <p class="text-gray-300 flex items-center">
+                            <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path>
+                            </svg>
+                            Ibadan, Nigeria
+                        </p>
+                        <a href="https://wa.me/2348123456789" class="text-gray-300 hover:text-primary transition-colors flex items-center" target="_blank">
+                            <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.106"/>
+                            </svg>
+                            WhatsApp Us
+                        </a>
+                        <a href="mailto:hello@riibmodest.com" class="text-gray-300 hover:text-primary transition-colors flex items-center">
+                            <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
+                                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+                            </svg>
+                            hello@riibmodest.com
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 pt-8 text-center">
+                <p class="text-gray-300">
+                    © 2025 RIIB Modest Wear. All Rights Reserved. | Proudly Nigerian 🇳🇬
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <div class="fixed bottom-6 right-6 z-50">
+        <a href="https://wa.me/2348123456789?text=Hello%20RIIB!%20I'd%20like%20to%20connect%20with%20your%20community" 
+           target="_blank"
+           class="bg-success hover:bg-success-600 text-white p-4 rounded-full shadow-hover transition-all duration-300 flex items-center justify-center group">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.106"/>
+            </svg>
+            <span class="absolute right-full mr-3 bg-text-primary text-white px-3 py-1 rounded-lg text-sm whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                Chat with us!
+            </span>
+        </a>
+    </div>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Story form submission
+        document.getElementById('story-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formData = {
+                name: document.getElementById('name').value,
+                location: document.getElementById('location').value,
+                email: document.getElementById('email').value,
+                story: document.getElementById('story').value,
+                consent: document.getElementById('consent').checked
+            };
+
+            if (formData.consent) {
+                alert('Thank you for sharing your story! We\'ll review your submission and may reach out for additional details. Your story helps inspire our community!');
+                this.reset();
+            } else {
+                alert('Please consent to sharing your story before submitting.');
+            }
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add animation classes on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all sections for animation
+        document.querySelectorAll('section').forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>

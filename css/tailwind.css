@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Primary Colors - Warm Gold */
+    --color-primary: #B8860B; /* gold-primary */
+    --color-primary-50: #FEF9E7; /* gold-50 */
+    --color-primary-100: #FDF3D0; /* gold-100 */
+    --color-primary-200: #FBE7A1; /* gold-200 */
+    --color-primary-300: #F9DB72; /* gold-300 */
+    --color-primary-400: #E5C84D; /* gold-400 */
+    --color-primary-500: #B8860B; /* gold-500 */
+    --color-primary-600: #9A7209; /* gold-600 */
+    --color-primary-700: #7C5E07; /* gold-700 */
+    --color-primary-800: #5E4A05; /* gold-800 */
+    --color-primary-900: #403603; /* gold-900 */
+
+    /* Secondary Colors - Rich Taupe */
+    --color-secondary: #8B7355; /* taupe-primary */
+    --color-secondary-50: #F5F2ED; /* taupe-50 */
+    --color-secondary-100: #EBE5DB; /* taupe-100 */
+    --color-secondary-200: #D7CBB7; /* taupe-200 */
+    --color-secondary-300: #C3B193; /* taupe-300 */
+    --color-secondary-400: #AF976F; /* taupe-400 */
+    --color-secondary-500: #8B7355; /* taupe-500 */
+    --color-secondary-600: #6F5C44; /* taupe-600 */
+    --color-secondary-700: #534533; /* taupe-700 */
+    --color-secondary-800: #372E22; /* taupe-800 */
+    --color-secondary-900: #1B1711; /* taupe-900 */
+
+    /* Accent Colors - Bright Gold */
+    --color-accent: #DAA520; /* bright-gold */
+    --color-accent-50: #FEF8E7; /* bright-gold-50 */
+    --color-accent-100: #FDF1CF; /* bright-gold-100 */
+    --color-accent-200: #FBE39F; /* bright-gold-200 */
+    --color-accent-300: #F9D56F; /* bright-gold-300 */
+    --color-accent-400: #F7C73F; /* bright-gold-400 */
+    --color-accent-500: #DAA520; /* bright-gold-500 */
+    --color-accent-600: #B8891A; /* bright-gold-600 */
+    --color-accent-700: #966D14; /* bright-gold-700 */
+    --color-accent-800: #74510E; /* bright-gold-800 */
+    --color-accent-900: #523508; /* bright-gold-900 */
+
+    /* Background Colors - Warm Cream */
+    --color-background: #FEFCF7; /* cream-primary */
+    --color-background-50: #FFFFFF; /* cream-50 */
+    --color-background-100: #FEFCF7; /* cream-100 */
+    --color-background-200: #FDF9EF; /* cream-200 */
+    --color-background-300: #FCF6E7; /* cream-300 */
+    --color-background-400: #FBF3DF; /* cream-400 */
+
+    /* Surface Colors - Subtle Beige */
+    --color-surface: #F5F2ED; /* beige-primary */
+    --color-surface-50: #FEFCFA; /* beige-50 */
+    --color-surface-100: #F5F2ED; /* beige-100 */
+    --color-surface-200: #EBE5DB; /* beige-200 */
+    --color-surface-300: #E1D8C9; /* beige-300 */
+    --color-surface-400: #D7CBB7; /* beige-400 */
+
+    /* Text Colors - Deep Brown */
+    --color-text-primary: #2C2420; /* brown-primary */
+    --color-text-secondary: #6B5B4F; /* brown-secondary */
+    --color-text-tertiary: #9A8A7E; /* brown-tertiary */
+    --color-text-disabled: #C4B9AD; /* brown-disabled */
+
+    /* Success Colors - Sage Green */
+    --color-success: #8FBC8F; /* sage-green */
+    --color-success-50: #F4F9F4; /* sage-green-50 */
+    --color-success-100: #E9F3E9; /* sage-green-100 */
+    --color-success-200: #D3E7D3; /* sage-green-200 */
+    --color-success-300: #BDDCBD; /* sage-green-300 */
+    --color-success-400: #A7D0A7; /* sage-green-400 */
+    --color-success-500: #8FBC8F; /* sage-green-500 */
+    --color-success-600: #729672; /* sage-green-600 */
+    --color-success-700: #557055; /* sage-green-700 */
+    --color-success-800: #384A38; /* sage-green-800 */
+    --color-success-900: #1B241B; /* sage-green-900 */
+
+    /* Warning Colors - Warm Amber */
+    --color-warning: #CD853F; /* amber-primary */
+    --color-warning-50: #FBF5EF; /* amber-50 */
+    --color-warning-100: #F7EBDF; /* amber-100 */
+    --color-warning-200: #EFD7BF; /* amber-200 */
+    --color-warning-300: #E7C39F; /* amber-300 */
+    --color-warning-400: #DFAF7F; /* amber-400 */
+    --color-warning-500: #CD853F; /* amber-500 */
+    --color-warning-600: #A46A32; /* amber-600 */
+    --color-warning-700: #7B4F25; /* amber-700 */
+    --color-warning-800: #523418; /* amber-800 */
+    --color-warning-900: #29190B; /* amber-900 */
+
+    /* Error Colors - Earthy Sienna */
+    --color-error: #A0522D; /* sienna-primary */
+    --color-error-50: #F8F2EE; /* sienna-50 */
+    --color-error-100: #F1E5DD; /* sienna-100 */
+    --color-error-200: #E3CBBB; /* sienna-200 */
+    --color-error-300: #D5B199; /* sienna-300 */
+    --color-error-400: #C79777; /* sienna-400 */
+    --color-error-500: #A0522D; /* sienna-500 */
+    --color-error-600: #804224; /* sienna-600 */
+    --color-error-700: #60311B; /* sienna-700 */
+    --color-error-800: #402112; /* sienna-800 */
+    --color-error-900: #201009; /* sienna-900 */
+
+    /* Shadows */
+    --shadow-product: 0 4px 20px rgba(184, 134, 11, 0.08);
+    --shadow-modal: 0 8px 32px rgba(184, 134, 11, 0.12);
+    --shadow-hover: 0 6px 24px rgba(184, 134, 11, 0.10);
+  }
+
+  body {
+    @apply font-body text-text-primary bg-background antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-headline;
+  }
+}
+
+@layer components {
+  /* Typography Components */
+  .heading-display {
+    @apply font-headline text-5xl md:text-6xl lg:text-7xl font-bold leading-tight tracking-tight;
+  }
+
+  .heading-1 {
+    @apply font-headline text-4xl md:text-5xl font-bold leading-tight;
+  }
+
+  .heading-2 {
+    @apply font-headline text-3xl md:text-4xl font-semibold leading-snug;
+  }
+
+  .heading-3 {
+    @apply font-headline text-2xl md:text-3xl font-semibold leading-snug;
+  }
+
+  .heading-4 {
+    @apply font-headline text-xl md:text-2xl font-semibold leading-normal;
+  }
+
+  .heading-5 {
+    @apply font-headline text-lg md:text-xl font-semibold leading-normal;
+  }
+
+  .body-large {
+    @apply font-body text-lg font-normal leading-relaxed;
+  }
+
+  .body-regular {
+    @apply font-body text-base font-normal leading-relaxed;
+  }
+
+  .body-small {
+    @apply font-body text-sm font-normal leading-relaxed;
+  }
+
+  .body-light {
+    @apply font-body text-base font-light leading-relaxed;
+  }
+
+  .accent-text {
+    @apply font-accent text-base font-normal leading-normal;
+  }
+
+  /* Button Components */
+  .btn-primary {
+    @apply font-cta text-base font-medium px-6 py-3 rounded-lg bg-primary text-white hover:bg-primary-600 active:bg-primary-700 transition-all duration-300 ease-out shadow-sm hover:shadow-hover;
+  }
+
+  .btn-secondary {
+    @apply font-cta text-base font-medium px-6 py-3 rounded-lg bg-surface text-text-primary border border-secondary hover:bg-secondary-50 active:bg-secondary-100 transition-all duration-300 ease-out;
+  }
+
+  .btn-accent {
+    @apply font-cta text-base font-medium px-6 py-3 rounded-lg bg-accent text-white hover:bg-accent-600 active:bg-accent-700 transition-all duration-300 ease-out shadow-sm hover:shadow-hover;
+  }
+
+  .btn-whatsapp {
+    @apply font-cta text-base font-medium px-6 py-3 rounded-lg bg-success text-white hover:bg-success-600 active:bg-success-700 transition-all duration-300 ease-out shadow-sm hover:shadow-hover inline-flex items-center gap-2;
+  }
+
+  /* Card Components */
+  .card-product {
+    @apply bg-surface rounded-lg overflow-hidden transition-all duration-300 ease-out hover:shadow-product;
+  }
+
+  .card-elevated {
+    @apply bg-background rounded-lg p-6 shadow-product;
+  }
+
+  /* Form Components */
+  .input-field {
+    @apply w-full px-4 py-3 rounded-lg border border-secondary bg-background text-text-primary placeholder:text-text-tertiary focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300 ease-out;
+  }
+
+  .input-error {
+    @apply border-error focus:ring-error;
+  }
+
+  /* Animation Utilities */
+  .fade-in {
+    animation: fadeIn 300ms ease-out;
+  }
+
+  .slide-up {
+    animation: slideUp 300ms ease-out;
+  }
+
+  .stagger-delay-1 {
+    animation-delay: 150ms;
+  }
+
+  .stagger-delay-2 {
+    animation-delay: 300ms;
+  }
+
+  .stagger-delay-3 {
+    animation-delay: 450ms;
+  }
+}
+
+@layer utilities {
+  /* Spacing Utilities */
+  .section-padding {
+    @apply py-16 md:py-24 lg:py-32;
+  }
+
+  .container-padding {
+    @apply px-4 md:px-6 lg:px-8;
+  }
+
+  /* Text Utilities */
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  /* Shadow Utilities */
+  .shadow-product {
+    box-shadow: var(--shadow-product);
+  }
+
+  .shadow-modal {
+    box-shadow: var(--shadow-modal);
+  }
+
+  .shadow-hover {
+    box-shadow: var(--shadow-hover);
+  }
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Smooth Scrolling */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Focus Visible Styles */
+:focus-visible {
+  @apply outline-2 outline-offset-2 outline-primary;
+}
+
+/* Selection Styles */
+::selection {
+  @apply bg-primary-200 text-text-primary;
+}
+
+::-moz-selection {
+  @apply bg-primary-200 text-text-primary;
+}
